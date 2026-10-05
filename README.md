@@ -47,3 +47,4 @@ cd 01-intro && uv run jupyter lab homework.ipynb
 | Module | Topic |
 |---|---|
 | [01-intro](01-intro/) | Introduction to Machine Learning |
+| [02-regression](02-regression/) | Regression |
