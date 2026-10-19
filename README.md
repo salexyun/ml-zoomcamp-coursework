@@ -49,3 +49,4 @@ cd 01-intro && uv run jupyter lab homework.ipynb
 | [01-intro](01-intro/) | Introduction to Machine Learning |
 | [02-regression](02-regression/) | Regression |
 | [03-classification](03-classification/) | Classification |
+| [04-evaluation](04-evaluation/) | Evaluation |
