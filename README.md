@@ -28,6 +28,16 @@ curl -L --create-dirs -o 01-intro/data/car_fuel_efficiency_2026.csv \
   https://raw.githubusercontent.com/DataTalksClub/machine-learning-zoomcamp/main/cohorts/2026/data/car_fuel_efficiency_2026.csv
 ```
 
+`05-deployment` has its own pinned environment (Python 3.11.15, `uv.lock`) to match the frozen model artifact, so sync and run it from inside that folder:
+
+```bash
+cd 05-deployment && uv sync --locked
+uv run python q3.py
+uv run --with jupyter jupyter lab homework.ipynb
+```
+
+`q4.py` starts the API locally and `q6.py` builds and runs the Docker container (Docker must be running).
+
 ## Usage
 
 Run a single question:
@@ -50,3 +60,4 @@ cd 01-intro && uv run jupyter lab homework.ipynb
 | [02-regression](02-regression/) | Regression |
 | [03-classification](03-classification/) | Classification |
 | [04-evaluation](04-evaluation/) | Evaluation |
+| [05-deployment](05-deployment/) | Deployment |
