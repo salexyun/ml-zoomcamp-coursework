@@ -38,6 +38,8 @@ uv run --with jupyter jupyter lab homework.ipynb
 
 `q4.py` starts the API locally and `q6.py` builds and runs the Docker container (Docker must be running).
 
+`06-trees` uses XGBoost, which on macOS needs the OpenMP runtime: `brew install libomp`.
+
 ## Usage
 
 Run a single question:
@@ -61,3 +63,4 @@ cd 01-intro && uv run jupyter lab homework.ipynb
 | [03-classification](03-classification/) | Classification |
 | [04-evaluation](04-evaluation/) | Evaluation |
 | [05-deployment](05-deployment/) | Deployment |
+| [06-trees](06-trees/) | Decision Trees and Ensemble Learning |
