@@ -38,6 +38,16 @@ uv run --with jupyter jupyter lab homework.ipynb
 
 `q4.py` starts the API locally and `q6.py` builds and runs the Docker container (Docker must be running).
 
+`08-deep-learning` likewise has its own pinned environment (Python 3.11.15, PyTorch 2.9.0 CPU) and a zipped image dataset:
+
+```bash
+cd 08-deep-learning && uv sync --locked
+curl -L -o data.zip https://github.com/SVizor42/ML_Zoomcamp/releases/download/straight-curly-data/data.zip
+unzip -q data.zip && rm data.zip   # creates data/train and data/test
+uv run python train.py             # writes history_baseline.json and history_augmented.json (~3 min)
+uv run python q3.py
+```
+
 `06-trees` uses XGBoost, which on macOS needs the OpenMP runtime: `brew install libomp`.
 
 ## Usage
@@ -64,3 +74,4 @@ cd 01-intro && uv run jupyter lab homework.ipynb
 | [04-evaluation](04-evaluation/) | Evaluation |
 | [05-deployment](05-deployment/) | Deployment |
 | [06-trees](06-trees/) | Decision Trees and Ensemble Learning |
+| [08-deep-learning](08-deep-learning/) | Neural Networks and Deep Learning |

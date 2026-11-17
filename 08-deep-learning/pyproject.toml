@@ -1,0 +1,17 @@
+[project]
+name = "mlzoomcamp-2026-deep-learning"
+version = "0.1.0"
+description = "Hair-type CNN for ML Zoomcamp 2026 homework 8"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "numpy==2.3.3",
+    "pillow==11.3.0",
+    "torch==2.9.0",
+    "torchvision==0.24.0",
+]
+
+[dependency-groups]
+dev = ["jupyter>=1.1.1", "matplotlib>=3.10"]
+
+[tool.uv]
+exclude-newer = "2026-09-14T23:59:59Z"
